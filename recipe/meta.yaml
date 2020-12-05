@@ -1,5 +1,5 @@
 {% set name = "python-kaleido" %}
-{% set version = "0.1.0a5" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido-{{ version }}.tar.gz
-  sha256: 55ff116d8a05998fd289f9480e30f87a4a24c14bc9f530cb2ee6de0c65c4a4f4
+  sha256: e3c522d665350e05013138d025438b09ae1e9d792d09d7bc6b34bcbaf9b99e3b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
