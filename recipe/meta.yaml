@@ -1,5 +1,5 @@
 {% set name = "python-kaleido" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido-{{ version }}.tar.gz
-  sha256: e3c522d665350e05013138d025438b09ae1e9d792d09d7bc6b34bcbaf9b99e3b
+  sha256: c68fd4c4d0e5e4ea762c7dbb8e7f72ffcd5866e4de3b4ef48d2f51c0e0c897f8
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
 
 test:
   requires:
-    - plotly >=4.10,<5.0
+    - plotly >=4.10
   imports:
     - kaleido
 
