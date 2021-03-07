@@ -1,5 +1,5 @@
 {% set name = "python-kaleido" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido-{{ version }}.tar.gz
-  sha256: c68fd4c4d0e5e4ea762c7dbb8e7f72ffcd5866e4de3b4ef48d2f51c0e0c897f8
+  sha256: fdb673a9759835d4f455990fc1ff8919bd100a0d34f2d3de7bd5eeb2162b57ec
 
 build:
   number: 0
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Fast static image export for web-based visualization libraries'
+  summary: Fast static image export for web-based visualization libraries
   description: |
     Python interface to Kaleido, a cross-platform library for generating static images
     (e.g. png, svg, pdf, etc.) for web-based visualization libraries, with a
