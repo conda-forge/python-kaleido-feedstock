@@ -1,13 +1,13 @@
 {% set name = "python-kaleido" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.1.post1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido-{{ version }}.tar.gz
-  sha256: fdb673a9759835d4f455990fc1ff8919bd100a0d34f2d3de7bd5eeb2162b57ec
+  url: https://github.com/plotly/Kaleido/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: cd078ac30ba4e26db71c3ac113deb08dfc161e3e323e18c8f7c1b8228cd5e623
 
 build:
   number: 0
