@@ -1,0 +1,48 @@
+context:
+  name: python-kaleido
+  version: 1.0.0
+
+package:
+  name: ${{ name }}
+  version: ${{ version }}
+
+source:
+  - url: https://pypi.org/packages/source/k/kaleido/kaleido-{{ version }}.tar.gz
+    sha256: 502d8ba64737924efaf5e94c2736745bcc7c926e6cc535838be36c0fc06330bd
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - choreographer >=1.0.5
+    - logistro >=1.0.8
+    - orjson >=3.10.15
+    - packaging
+
+tests:
+  - python:
+      imports:
+        - kaleido
+
+about:
+  homepage: https://github.com/plotly/Kaleido
+  license: MIT
+  license_file: LICENSE.md
+  summary: Fast static image export for web-based visualization libraries
+  description: |
+    Python interface to Kaleido, a cross-platform library for generating static images
+    (e.g. png, svg, pdf, etc.) for web-based visualization libraries, with a
+    particular focus on eliminating external dependencies.
+
+extra:
+  recipe-maintainers:
+    - jonmmease
+    - ytausch
