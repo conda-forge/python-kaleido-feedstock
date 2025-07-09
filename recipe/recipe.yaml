@@ -7,7 +7,7 @@ package:
   version: ${{ version }}
 
 source:
-  - url: https://pypi.org/packages/source/k/kaleido/kaleido-{{ version }}.tar.gz
+  - url: https://pypi.org/packages/source/k/kaleido/kaleido-${{ version }}.tar.gz
     sha256: 502d8ba64737924efaf5e94c2736745bcc7c926e6cc535838be36c0fc06330bd
 
 build:
