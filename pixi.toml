@@ -7,7 +7,7 @@
 
 [project]
 name = "python-kaleido-feedstock"
-version = "3.51.0"  # conda-smithy version used to generate this file
+version = "3.51.1"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/python-kaleido-feedstock"
 authors = ["@conda-forge/python-kaleido"]
 channels = ["conda-forge"]
