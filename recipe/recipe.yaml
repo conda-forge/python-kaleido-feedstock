@@ -27,7 +27,7 @@ requirements:
     - logistro >=1.0.8
     - orjson >=3.10.15
     - packaging
-    - pytest-timeout>=2.4.0
+    - pytest-timeout >=2.4.0
 
 tests:
   - python:
