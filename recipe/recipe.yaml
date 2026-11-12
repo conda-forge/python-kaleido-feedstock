@@ -1,6 +1,6 @@
 context:
   name: python-kaleido
-  version: 1.5.0
+  version: "1.5.1"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/k/kaleido/kaleido-${{ version }}.tar.gz
-    sha256: e724bbdf94be097879793365afaeba2990ae43e932efaf9c8e2e8d8ad0f1cba0
+    sha256: 871b4dd87c716ec7fec414ac62d158575dbb98908ac9bc61faa27cb0dbdd8e72
 
 build:
   number: 0
